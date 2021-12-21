@@ -71,22 +71,7 @@ td[colspan="3"] {
 text-align: center;
 }
 </style>
-<script>
-var flag=new Array();
-window.onload = function() {
-for (var i = 0; i < document.images.length; i++) flag[i]=false;
-for (var i = 0; i < document.images.length; i++) {
-var image = document.images[i];
-image.setAttribute("index", i + "");
-image.onclick = function() {
-var index = this.getAttribute("index");
-if(!flag[index]) {document.images[index].style.border="2px solid red"; flag[index]=true;}
-else {document.images[index].style.border="1px solid green"; flag[index]=false;}
-};
-}
-};
 
-</script>
 </head>
 <body>
 <table class="styled-table" align="center">
